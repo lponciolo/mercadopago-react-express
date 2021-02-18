@@ -1,0 +1,8 @@
+{
+    "name": "Cookie Shop",
+    "short_name": "https://leitocookieshop.netlify.app/",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#00bfbf",
+    "background_color": "#171c28"
+}

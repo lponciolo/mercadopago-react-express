@@ -1,0 +1,41 @@
+{
+    "basics": {
+        "name": "Leito Ponciolo",
+        "label": "JS Dev & Entrepreneur",
+        "email": "l.ponciolo@gmail.com",
+        "phone": "+5491169305657",
+        "picture": "lp.png",
+        "x_title": "Leito's Cookie Shop",
+        "job": "JS Dev & Entrepreneur",
+        "description": "Web App example for MercadoPago integration with Express.js and React.js",
+        "summary": "based in Argentina.",
+        "keywords": "personal,website,portfolio,template,kit,jo,leonardo,ponciolo,computer,express,node,germany,react,github,linkedin,google,gitlab,telegram,material,design,ui,mercadopago",
+        "url": "https://leitocookieshop.netlify.app/",
+        "location": {
+            "city": "Avellaneda",
+            "country": "Argentina",
+            "countryCode": "DEU",
+            "region": "Buenos Aires"
+        },
+        "profiles": [
+            {
+                "network": "Google",
+                "username": "l.ponciolo@gmail.com",
+                "url": "mailto:l.ponciolo@gmail.com",
+                "x_icon": "fab fa-google"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "leonardo-ponciolo",
+                "url": "https://www.linkedin.com/in/leonardo-ponciolo/",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "lponciolo",
+                "url": "https://github.com/lponciolo",
+                "x_icon": "fab fa-github"
+            }
+        ]
+    }
+}

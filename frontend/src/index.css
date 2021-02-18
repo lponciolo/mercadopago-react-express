@@ -1,0 +1,26 @@
+::-moz-selection {
+    background: #00bfbf;
+    color: #fafafa;
+    text-shadow: none;
+}
+::selection {
+    background: #00bfbf;
+    color: #fafafa;
+    text-shadow: none;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+body {
+    transition: all 0.5s ease;
+}
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}

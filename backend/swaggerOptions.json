@@ -1,0 +1,176 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.0.1",
+    "title": "Flashout Api",
+    "description": "A sample Express.js API template ",
+    "termsOfService": "http://localhost:8081/",
+    "contact": {
+      "name": "Swagger API Team"
+    },
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "host": "localhost:8081",
+  "basePath": "/",
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/admin": {
+      "get": {
+        "description": "Admin path only authorized to admin user",
+        "operationId": "getWelcome",
+        "produces": ["text/html"],
+        "parameters": [
+          
+          {
+            "in": "body",
+            "description": "user username and password",
+            "name": "user",
+            "schema": {
+              "properties": {
+           
+              }
+            }
+          },{
+            "name":"authorization",
+            "in": "header",
+            "description": "access token required",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Welcome message!",
+            "schema": {
+              "type": "string",
+              "example": "Hello Admin!"
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/ErrorModel"
+            }
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "description": "user username and password",
+            "name": "user",
+            "schema": {
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example":"admin"
+                },
+                "password": {
+                  "type": "string",
+                  "example":"admin"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema":{
+              "description": "user",
+              "properties": {
+                "message":{
+                  "type":"string",
+                  "example": "successfull Login"
+                },
+                "userAuth":{
+                  "$ref": "#/definitions/userAuth"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "description": "welcome path",
+        "operationId": "getWelcome",
+        "produces": ["text/html"],
+        "parameters": [{
+          "in": "body",
+          "description": "user username and password",
+          "name": "user",
+          "schema": {
+            "properties": {
+         
+            }
+          }
+        }],
+        "responses": {
+          "200": {
+            "description": "Welcome message!",
+            "schema": {
+              "type": "string",
+              "example": "Hello World!"
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "schema": {
+              "$ref": "#/definitions/ErrorModel"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "userAuth":{
+      "type":"object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/userAuth"
+        }
+      ],
+      "required": ["username","role","accessToken"],
+      "properties": {
+        "username":{
+          "type":"string",
+          "example":"juancitoDelToro99"
+        },
+        "role":{
+          "type":"string",
+          "example":"user"
+        },
+        "accessToken":{
+          "type":"string",
+          "example":"WF0IjoxNjEzNDg5NzMzfQ.XwSvEJDzlbUbX9eh1n2DJrJCX-tilcMuseI9EJK823YeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwia"
+        }
+      }
+    },
+    "ErrorModel": {
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "example": 500
+        },
+        "message": {
+          "type": "string",
+          "example": "oops something happend"
+        }
+      }
+    }
+  }
+}
