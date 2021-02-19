@@ -25,11 +25,6 @@ export const ContentRejected = () => {
       <Typography variant="h2" component="h1" gutterBottom>
         <TextDecrypt text={`${Resume.basics.x_title}`} />
       </Typography>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <MPButton />
-        </Grid>
-      </Grid>
       <Typography variant="h5" component="h2" gutterBottom>
         <TextDecrypt text={`Pago rechazado`} />
         <TextDecrypt text={`Leito está triste`} />

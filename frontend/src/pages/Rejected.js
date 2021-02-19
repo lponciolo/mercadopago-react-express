@@ -23,7 +23,6 @@ export const Rejected = () => {
        
                 <LogoLink />
                 <ContentRejected />
-            
                 <Hidden smDown>
                     <FooterIcons />
                 </Hidden>

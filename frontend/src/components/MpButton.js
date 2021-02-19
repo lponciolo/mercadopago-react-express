@@ -1,10 +1,12 @@
 import { Button } from "@material-ui/core";
 import axios from "axios";
 
+const backendURL = ""
+
 const MpPaymentHandler = async (cookies) => {
   console.log(cookies);
   const response = await axios.post(
-    "https://mercadopagobackend.herokuapp.com/payment/new",
+    backendURL,
     { cookies: cookies }
   );
   window.location.href = response.data.init_point;
