@@ -1,6 +1,10 @@
 # Welcome to Leito's Cookie Shop
 This Repo should work as a reference about how you can make a backend server with express.js & MercadoPago.SDK and how you should connect it to your React.js, ( or Angular.js, React Native, Ionic, etc. ).
 
+# Demo
+
+[Demo](https://leitocookieshop.netlify.app/)
+
 # Installation
 
 ## Frontend
@@ -97,4 +101,4 @@ MercadoPago API will Post in this endpoint when a payment status change
 
 ## Found a bug? Missing a specific feature?
 
-Feel free to  **file a new issue**  with a respective title and description on the the  [lponciolo/mercadopago-react-express](https://github.com/lponciolo/mercad
+Feel free to  **file a new issue**  with a respective title and description on the the  [lponciolo/mercadopago-react-express](https://github.com/lponciolo/mercadopago-react-express/issues)  repository.
