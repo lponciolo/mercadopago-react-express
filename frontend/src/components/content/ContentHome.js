@@ -31,7 +31,7 @@ export const ContentHome = () => {
     <Container component="main" className={`${classes.main}`} maxWidth="sm">
       <Cookie />
       <Typography variant="h5" component="h5" gutterBottom>
-        Buy{" "}
+        Buy Leito {" "}
         <Select
           style={{ marginTop: "30px" }}
           labelId="demo-simple-select-label"
@@ -45,7 +45,7 @@ export const ContentHome = () => {
             </MenuItem>
           ))}
         </Select>{" "}
-        {cookies < 2 ? "Cookie" : "Cookies"} to Leito
+        {cookies < 2 ? "Cookie" : "Cookies"} 
       </Typography>
       <MPButton cookies={cookies} />
       <FooterText />

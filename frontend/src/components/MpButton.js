@@ -17,7 +17,7 @@ const MpButton = (props) => {
       color="primary"
       onClick={() => MpPaymentHandler(props.cookies)}
     >
-      🍪 Buy Leito a Cookie 🍪
+      🍪 Buy Now! 🍪
     </Button>
   );
 };
