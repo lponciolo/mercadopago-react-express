@@ -12,7 +12,9 @@ class AppController {
     next: NextFunction
   ): Promise<any> {
     try {
-      const checkout = await this.paymentService.createPaymentMercadoPago()
+      const checkout = await this.paymentService.createPaymentMercadoPago(
+        req.body.cookies
+      )
       console.log(checkout)
       return res.status(200).json({ init_point: checkout.init_point })
       // const initPoint: string = checkout.init_point

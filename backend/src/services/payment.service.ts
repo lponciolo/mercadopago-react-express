@@ -20,13 +20,13 @@ class PaymentService {
     // declaramos de la siguiente manera el token, para que sea más fácil cambiarlo dependiendo del ambiente
   }
 
-  async createPaymentMercadoPago() {
+  async createPaymentMercadoPago(quantityValue: string) {
     const preference = {
       items: [
         {
           title: 'Cookie',
           unit_price: 100,
-          quantity: 1,
+          quantity: quantityValue,
         },
       ],
       back_urls: {
