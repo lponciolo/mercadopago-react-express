@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
 import Resume from "../../settings/resume.json";
 import Cookie from "../cookie";
-import MPButton from "../MpButton";
 
 const useStyles = makeStyles((theme) => ({
   main: {
